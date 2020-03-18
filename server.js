@@ -9,7 +9,7 @@ const token = "ahuBHejkJJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA07i73Gebhu98";
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 
 function authenticator(req, res, next) {
   const { authorization } = req.headers;
